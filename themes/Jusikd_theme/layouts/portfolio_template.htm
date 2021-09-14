@@ -1,0 +1,131 @@
+description = "Шаблон портфолио"
+==
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Uniocde -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <![endif]-->
+    <!-- First Mobile Meta -->
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <!-- Page Kewords -->
+    <meta name="keywords" content="JUSIKD.ART">
+    <!-- Site Author -->
+    <meta name="author" content="JUSIKD.ART">
+    <!-- Title -->
+    <title>JUSIKD.ART | {{ this.page.title }}</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ 'assets/images/favicon.ico'|theme }}">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}" type="text/css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="{{ 'assets/css/swiper.min.css|theme' }}" type="text/css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{{ 'assets/fonts/flaticon/flaticon.css'|theme }}" type="text/css">
+    <link rel="stylesheet" href="{{ 'assets/fonts/fontawesome/font-awesome.min.css'|theme }}">
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.min.css'|theme }}" type="text/css">
+    <link rel="stylesheet" href="{{ 'assets/css/owl.theme.default.min.css'|theme }}" type="text/css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{{ 'assets/css/animate.min.css'|theme }}" type="text/css">
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}" type="text/css">
+
+</head>
+<body>
+	<!-- Section Preloader -->
+	<div id="section-preloader">
+		<div class="blobs">
+			<div class="blob-center"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+		</div>
+	</div>
+	<!-- /.Section Preloader -->
+	
+	<!-- Section Navbar -->
+	<div id="section-navbar2">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="header-logo mr-auto">
+					<a href="/"><img src="{{ 'assets/images/jus_logo_2020_long_white-01.svg'|theme }}" alt="Jusikd.ART" height="50" width="200"></a>
+				</div>
+				<button type="button" id="sidebarCollapse" class="v3 navbar-btn active">
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	                <span></span>
+	            </button>
+			</nav>
+		</div>
+	</div>
+	<!-- /.Section Navbar -->
+	<div class="main-wrapper">
+		<!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+        	<div class="social-links socials-header text-center">
+                {% partial 'includes/social_buttons' %}
+            </div>
+            {% partial 'includes/menu-in-portfolio' %}
+        </nav>
+		<div id="main-content" class="active">
+            {% partial 'includes/portfolio' %}
+			<!-- Section Footer -->
+			<div id="section-footer">
+				<div class="footer1 col-12">
+					<div class="widget col-12">
+						<a href="/"><img src="{{ 'assets/images/jus_logo_2020_mini_white.svg'|theme }}" alt="JUSIKD.ART" height="100" width="100"></a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="footer2 row">
+						<div class="ft-copyright col-md-6">
+							<p>Copyright © {{ date|date("Y") }} <a href="/">JUSIKD.ART</a></p>
+						</div>
+						<div class="ft-socialmedia col-md-6">
+							<div class="social-links socials-header">
+							    {% partial 'includes/social_buttons' %}
+				            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.Section Footer -->
+		</div>
+	</div>
+
+	<!-- Javascript Files -->
+	<script src="{{ 'assets/js/jquery2.min.js'|theme }}"></script>
+	<!-- Bootstrap -->
+	<script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+	<!-- Swiper Slider -->
+	<script src="{{ 'assets/js/swiper.min.js'|theme }}"></script>
+	<!-- SLY Carousel -->
+	<script src="{{ 'assets/js/sly.min.js'|theme }}"></script>
+	<script src="{{ 'assets/js/sly.vendor.min.js'|theme }}"></script>
+	<!-- OWL Carousel -->
+	<script src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+	<!-- ISOTOP Filter -->
+	<script src="{{ 'assets/js/isotope.pkgd.min.js'|theme }}"></script>
+	<script src="{{ 'assets/js/our-portfolio.js'|theme }}"></script>
+	<!-- Waypoint -->
+	<script src="{{ 'assets/js/jquery.waypoints.min.js'|theme }}"></script>
+	<!-- Easy Waypoint -->
+	<script src="{{ 'assets/js/easy-waypoint-animate.js'|theme }}"></script>
+	<!-- Scripts -->
+	<script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+	
+	<!--script src="{{ 'assets/js/parallax.js'|theme }}"></script-->
+	<script src="{{ 'assets/js/parallax.min.js'|theme }}"></script>
+	
+	 {% framework extras %}
+
+</body>
+</html>

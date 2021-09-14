@@ -1,0 +1,14 @@
+title = "Портфолио"
+url = "/portfolio/:slug"
+layout = "portfolio_template"
+is_hidden = 1
+
+[photoAlbum]
+slug = "{{ :slug }}"
+photoPage = "portfolio"
+thumbMode = "auto"
+thumbWidth = 640
+thumbHeight = 480
+photosOnPage = 12
+==
+{% component 'photoAlbum' %}

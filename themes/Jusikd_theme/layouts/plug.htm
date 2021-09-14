@@ -1,0 +1,43 @@
+description = "Plug template"
+==
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JUSIKD.ART | {{ this.page.title }}</title>
+<link rel="shortcut icon" href="{{ 'assets/images/favicon.ico'|theme  }}">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="{{ 'assets/plug/css/style.css'|theme }}">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="preloader">
+  <div id="preloaders"> <img src="{{ 'assets/plug/img/preloader.gif'|theme }}" height="64" width="64" alt="preloader"></div>
+</div>
+<div class="coming-soon">
+  <div class="container">
+    <div class="row">
+      <div class="logo"></div>
+      <h2>JUSIKD.ART</h2>
+      <p>Our site is on service now. We`ll be back as soon as possible.</p>
+      <p>Stay tuned!</p>
+    </div>
+    <div class="social">{% partial 'includes/social_buttons' %}</div>
+    <div class="copyright">Copyright &copy; JUSIKD.ART {{ date|date("Y") }}</div>
+  </div>
+</div>
+<!-- Javascript --> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script src="{{ 'assets/plug/js/jquery.countdown.js'|theme }}"></script> 
+<script src="{{ 'assets/plug/js/custom.js'|theme }}"></script>
+</body>
+</html>

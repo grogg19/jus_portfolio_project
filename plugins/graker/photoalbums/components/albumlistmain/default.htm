@@ -1,0 +1,21 @@
+{% for album in __SELF__.albums %}
+    {% if loop.index != 2 %}
+    <div class="item col-12 col-md-4">
+    {% endif %}
+        <a href="{{ album.url }}">
+            <div class="img-container">
+                <img class="img-fluid" src="{{ album.latestPhoto.thumb }}" alt="{{ album.title }}">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <h3>{{ album.title }}</h3>
+                        <p>{{ album.description|raw }}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    {% if loop.index != 1 %}
+    </div>
+    {% endif %}
+{% else %}
+    <div class="col-xs-12 no-data">Альбомы не загружены</div>
+{% endfor %}

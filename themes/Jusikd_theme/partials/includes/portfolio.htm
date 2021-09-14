@@ -1,0 +1,62 @@
+description = "Портфолио - полный блок"
+
+[photoAlbum]
+slug = "{{ :slug }}"
+photoPage = "portfolio"
+thumbMode = "auto"
+thumbWidth = 640
+thumbHeight = 480
+photosOnPage = 12
+==
+<!-- Section Breadcrumb 1 -->
+            
+		    <div id="section-breadcrumb1" class="bg4 parallax" data-parallax="scroll" data-image-src="{{ photoAlbum.album.getImage.path }}">
+		    <div class="dark-background">
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="content col-12">
+		    				<h1>{{ photoAlbum.album.title }}</h1>
+		    				{{ photoAlbum.album.description|raw }}
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>	
+		    </div>
+			<!-- /.Section Breadcrumb 1 -->
+			<!-- Section Our Portfolio 2 -->
+			<div id="section-ourportfolio2" class="v2">
+				<div class="container">
+					<div class="row m-top-15">
+						<!-- Content Portfolio -->
+						<!-- <div class="filter col-12">
+						    <div class="row">
+						        <div class="portfolioFilter clearfix">
+						            <a href="#" class="current">Все</a>
+						            {% for albumName in albumList.albums %}
+						            <a href="/portfolio/{{albumName.slug}}">{{ albumName.title }}</a>
+						            {% endfor %}
+						        </div>
+						    </div>
+						</div> -->
+						{% for photo in photoAlbum.album.photos %}
+						<div class="portfolioContainer col-12">
+							<div class="row">
+								<div class="item ez-animate webDesign" data-animation="fadeInUp">
+									<div class="img-container">
+										<img class="img-fluid" src="{{ photo.image.path }}" >
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						<!-- /.Content Portfolio --> 
+						<div class="space32"></div>
+						<!-- Load More Button -->
+						<div class="loadmore-btn col-12 text-center">
+							<a href="#" class="btn-1">Load More</a>
+						</div>
+						<!-- /.Load More Button -->
+					</div>
+				</div>
+			</div>
+			<!-- /.Section Our Portfolio 2 -->

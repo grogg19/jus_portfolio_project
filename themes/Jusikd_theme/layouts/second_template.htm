@@ -1,0 +1,283 @@
+description = "Доп. шаблон"
+
+[contactForm]
+loadJS = 1
+
+[sweetAlertMessage]
+==
+{% component 'sweetAlertMessage' %}<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Uniocde -->
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <![endif]-->
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <!-- Page Kewords -->
+    <meta name="keywords" content="JUSIKD.ART">
+    <!-- Site Author -->
+    <meta name="author" content="JUSIKD.ART">
+    <!-- Title -->
+    <title>JUSIKD.ART | {{ this.page.title }}</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ 'assets/images/favicon.ico'|theme  }}">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|theme }}" type="text/css">
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="{{ 'assets/css/swiper.min.css'|theme }}" type="text/css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="{{ 'assets/fonts/flaticon/flaticon.css'|theme }}" type="text/css">
+    <link rel="stylesheet" href="{{ 'assets/fonts/fontawesome/font-awesome.min.css'|theme }}">
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.min.css'|theme }}" type="text/css">
+    <link rel="stylesheet" href="{{ 'assets/css/owl.theme.default.min.css'|theme }}" type="text/css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="{{ 'assets/css/animate.min.css'|theme }}" type="text/css">
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ 'assets/css/style.css'|theme }}" type="text/css">
+    <!-- REVOLUTION SLIDER -->
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:400%2C700%7COpen+Sans:400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+	<!--link rel="stylesheet" type="text/css" href="{{ 'assets/revslider1/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css'|theme }}"-->
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/revslider1/fonts/font-awesome/css/font-awesome.css'|theme }}">
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="{{ 'assets/revslider1/css/settings.css'|theme }}">
+	<!-- REVOLUTION LAYERS STYLES -->
+	<link rel="stylesheet" href="{{ 'assets/revslider1/css/inline-revslider1.css" type="text/css'|theme }}">
+	<!-- ADD-ONS CSS FILES -->
+	<link rel="stylesheet" type="text/css"  media="all" href="{{ 'assets/revslider1/css/revolution.addon.particles.css'|theme }}" />
+	<link rel="stylesheet" type="text/css"  media="all" href="{{ 'assets/revslider1/css/revolution.addon.polyfold.css'|theme }}" />
+	
+    <link rel="stylesheet" href="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css">
+	<!-- /.REVOLUTION SLIDER -->
+</head>
+<body>
+	<!-- Section Preloader -->
+	<div id="section-preloader">
+		<div class="blobs">
+			<div class="blob-center"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+			<div class="blob"></div>
+		</div>
+	</div>
+	<!-- /.Section Preloader -->
+	<!-- Section Navbar -->
+	<div id="section-navbar1">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg">
+				<div class="header-logo mr-auto">
+					<a href="/" class="header-contact"><img src="{{ 'assets/images/logo_jus_long.svg'|theme }}" alt="JUSIKD.ART" height="50" width="200"><span></span></a>
+				</div>
+				<ul class="nav navbar-nav navbar1">
+		            <li class="nav-item">
+		                <button type="button" id="sidebarCollapse" class="navbar-btn active">
+			                <span></span>
+			                <span></span>
+			                <span></span>
+			                <span></span>
+			            </button>
+		            </li>
+		        </ul>
+		    </nav>
+		</div>
+	</div>
+	<div id="section-search" class="close-search">
+		<div class="container">
+			<div class="navigation-search">
+				<div class="row">
+					<div class="col ns-logo">
+						<a href="#"><img src="{{ 'assets/images/logo.png'|theme }}" alt="Jusikd.ART"></a>
+					</div>
+					<div class="col ns-close">
+						<span class="close"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.Section Navbar -->
+	<div class="main-wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+        	<div class="social-links socials-header text-center">
+                {% partial 'includes/social_buttons' %}
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#section-preloader" target="_self" class="list-menu">Наверх</a>
+                </li>
+                <li>
+                    <a href="#section-aboutus1" target="_self" class="list-menu">Обо мне</a>
+                </li>
+                <li>
+                    <a href="#section-recentworks1"  target="_self" class="list-menu">Портфолио</a>
+                </li>
+                <li>
+                    <a href="#section-contactform1" target="_self" class="list-menu">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.Sidebar  -->
+        <!-- Page Content  -->
+        <div id="main-content" class="active">
+			<!-- Section Contact Form 1 -->
+			<div id="section-contactform1">
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<div class="title1 ez-animate col-12" data-animation="fadeInUp">
+								<h6>КОНТАКТЫ</h6>
+								<h2>Свяжитесь со мной</h2>
+								<i class="flaticon-download"></i>
+							</div>
+							<div class="contactform1">
+							    <div class="confirm-contact-container"></div>
+								<form id="contact-form" data-request="{{ contactForm }}::onMailSend"
+                                          data-request-update="'{{ contactForm }}::confirm': '.confirm-contact-container'"
+                                          data-request-success="getMessage()"
+                                          {% if contactForm.enableFileUpload %}
+                                          data-request-files
+                                          {% endif %}>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<input type="text" class="form-control" id="name" name="name" placeholder="{{ label.name }} *" required>
+										</div>
+										<div class="form-group col-md-6">
+											<input type="email" class="form-control" id="email" name="email" placeholder="{{ label.email }} *" required>
+										</div>
+									</div>
+									{% if contactForm.enablePhoneNumber or contactForm.enableSubject %}
+									<div class="form-row">
+									     {% if contactForm.enablePhoneNumber %}
+                                            <div class="form-group col-md-6">
+											    <input type="text" class="form-control" name="phone_number" id="PhoneNumber" placeholder="{{ label.phone_number }} *" required>
+										    </div>
+                                         {% endif %}
+                                         {% if contactForm.enableSubject %}
+                                            <div class="form-group col-md-6">
+											    <input type="text" class="form-control" id="subject" name="subject" placeholder="{{ label.subject }} *" required>
+										    </div>
+                                         {% endif %}
+									</div>
+									{% endif %}
+									{% if contactForm.enableFileUpload %}
+									<div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="attachment">{{ label.attachment }}</label>
+                                            <input type="file" name="attachment" class="form-control">
+                                        </div>
+                                    </div>
+                                    {% endif %}
+									<div class="form-row">
+										<div class="form-group col-md-12">
+											<textarea class="form-control" id="message" name="message_content" rows="3" placeholder="{{ label.message }} *" required></textarea>
+										</div>
+									</div>
+									{% if contactForm.enableCaptcha %}
+									<div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <div class="g-recaptcha" data-theme="dark" data-sitekey="{{ contactForm.captchaSiteKey }}"></div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                    {% if contactForm.mailgunSubscribeExist %}
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" name="maillist_subscribe" checked>{{label.maillist}}</label>
+                                                <input type="hidden" name="confirm_subscribe" value="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+									<div class="form-row">
+										<div class="form-group m-bot0 col-md-12 ">
+											<!--button type="submit">{{label.button_text}}</button-->
+											<button class="btn btn-primary btn-lg pull-left mt-4">
+                                                {{label.button_text}}
+                                            </button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.Section Contact Form 1 -->
+			<!-- Section Footer -->
+			<div id="section-footer">
+				<div class="footer1 col-12">
+					<div class="widget col-12">
+						<a href="/"><img src="{{ 'assets/images/logo_jus.svg'|theme }}" alt="JUSIKD.ART" height="100" width="100"></a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="footer2 row">
+						<div class="ft-copyright col-md-6">
+							<p>Copyright © {{ date|date("Y") }} <a href="/">JUSIKD.ART</a></p>
+						</div>
+						<div class="ft-socialmedia col-md-6">
+							<div class="social-links socials-header">
+							    {% partial 'includes/social_buttons' %}
+				            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.Section Footer -->
+        </div>
+    </div>
+	<!-- Javascript Files -->
+	<script src="{{ 'assets/js/jquery.min.js'|theme }}"></script>
+	<!-- Bootstrap -->
+	<script src="{{ 'assets/js/bootstrap.min.js'|theme }}"></script>
+	<!-- Swiper Slider -->
+	<script src="{{ 'assets/js/swiper.min.js'|theme }}"></script>
+	<!-- OWL Carousel -->
+	<script src="{{ 'assets/js/owl.carousel.min.js'|theme }}"></script>
+	<!-- Waypoint -->
+	<script src="{{ 'assets/js/jquery.waypoints.min.js'|theme }}"></script>
+	<!-- Easy Waypoint -->
+	<script src="{{ 'assets/js/easy-waypoint-animate.js'|theme }}"></script>
+	<!-- Counter -->
+	<script src="{{ 'assets/js/jquery.countup.js'|theme }}"></script>
+	<script src="{{ 'assets/js/cmz-count.js'|theme }}"></script>
+	<!-- Scripts -->
+	<script src="{{ 'assets/js/scripts.js'|theme }}"></script>
+	
+
+	<!-- REVOLUTION SLIDER -->
+	<!-- ADD-ONS JS FILES -->
+	<script src="{{ 'assets/revslider1/js/revolution.addon.particles.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/revolution.addon.snow.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/revolution.addon.polyfold.min.js'|theme }}"></script>
+	<!-- REVOLUTION JS FILES -->
+	<script src="{{ 'assets/revslider1/js/jquery.themepunch.tools.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/jquery.themepunch.revolution.min.js'|theme }}"></script>
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.actions.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.carousel.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.kenburn.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.layeranimation.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.migration.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.navigation.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.parallax.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.slideanims.min.js'|theme }}"></script>
+	<script src="{{ 'assets/revslider1/js/extensions/revolution.extension.video.min.js'|theme }}"></script>
+	<!-- Inline JS -->
+	<script src="{{ 'assets/revslider1/js/inline-revslider1.js'|theme }}"></script>
+	
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="/plugins/planetadeleste/swal/assets/js/flash-swal.js"></script>
+    
+	{% framework extras %}
+
+</body>
+</html>
