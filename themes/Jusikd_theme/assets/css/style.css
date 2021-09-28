@@ -1792,6 +1792,14 @@ text-align: center;
     color: #ffffff;
     margin-bottom: 15px;
 }
+
+#section-miscellaneous1 h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	color: #ffffff;
+	margin-bottom: 15px;
+}
+
 #section-miscellaneous1 p{
 	font-family: 'SourceSansPro-Regular';
 	font-size: 18px;
