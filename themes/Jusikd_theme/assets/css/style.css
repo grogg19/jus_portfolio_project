@@ -172,6 +172,28 @@ Version		: 1.0.0
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/raleway/Raleway-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('../fonts/raleway/Raleway-Regular.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway-Light';
+	src: url('../fonts/raleway/Raleway-Light.ttf');
+	font-weight: 400;
+	font-style: normal;
+}
+
 /*
 @font-face {
     font-family: 'DIN-Round-Pro';
@@ -1787,7 +1809,7 @@ text-align: center;
     margin: 0;
 }
 #section-miscellaneous1 h3{
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
     color: #ffffff;
     margin-bottom: 15px;
@@ -1795,17 +1817,20 @@ text-align: center;
 
 #section-miscellaneous1 h1{
 	font-family: 'Raleway', sans-serif;
-	font-size: 26px;
+	font-size: 96px;
 	color: #ffffff;
+	line-height: 113px;
 	margin-bottom: 15px;
 }
 
 #section-miscellaneous1 p{
-	font-family: 'SourceSansPro-Regular';
-	font-size: 18px;
-    color: #878787;
-    letter-spacing: -0.8px;
-    line-height: 12px;
+	font-family: 'Raleway-Light';
+	font-size: 20px;;
+    color: #ffffff;
+	font-style: normal;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	font-weight: 400;
     margin-bottom: 5px;
 }
 
@@ -5230,6 +5255,63 @@ text-align: center;
 #section-homepage5 #section-6 .contact-details .item .thumb-icon i:before{
 	font-size: 35px;
 	color: #d0bb79;
+}
+
+/*=============================
+ *4.3. SECTION DIRECTIONS *
+ *============================*/
+#section-directions{
+	padding: 100px 0 0 0;
+	background: #0d0f16;
+}
+#section-directions .item{
+	margin-bottom: 90px;
+}
+
+#section-directions h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+	font-weight: 600;
+	color: #ffffff;
+	line-height: 48px;
+	margin-bottom: 72px;
+	margin-left: 20px;
+}
+
+#section-directions h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 54px;
+	color: #ffffff;
+	line-height: 120%;
+	margin-bottom: 35px;
+}
+
+#section-directions p{
+	font-family: 'Raleway-Light';
+	font-size: 20px;;
+	color: #ffffff;
+	font-style: normal;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+#section-directions ul {
+	padding-left: 0;
+}
+
+#section-directions li{
+	font-family: 'Raleway-Light';
+	font-size: 20px;;
+	color: #ffffff;
+	font-style: normal;
+	line-height: 140%;
+	letter-spacing: 0.02em;
+	font-weight: 400;
+	text-indent: 0;
+	margin-bottom: 5px;
+	list-style: none;
 }
 
 
