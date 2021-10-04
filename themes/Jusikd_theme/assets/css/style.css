@@ -1838,16 +1838,18 @@ text-align: center;
  * 4.4. SECTION RECENT WORKS 1 *  
  *=============================*/
 #section-recentworks1{
-	padding: 120px 0;
+	padding: 60px 0;
 	background: #0d0f16;
 }
 #section-recentworks1 .our-portfolio .item{
 	text-align: center;
 	line-height: 0;
+	margin: 0;
+	padding: 0;
 }
 #section-recentworks1 .our-portfolio .item a {
-    margin-bottom: 30px;
     display: inline-block;
+	margin: 0;
 }
 #section-recentworks1 .our-portfolio .item:last-of-type a:last-of-type{
 	margin-bottom: 0;
@@ -1857,7 +1859,7 @@ text-align: center;
 	display:inline-block;
 }
 #section-recentworks1 .our-portfolio .item .img-container img{
-	display:block
+	display:block;
 }
 #section-recentworks1 .our-portfolio .item .img-container .overlay{
 	position:absolute;
@@ -6135,7 +6137,7 @@ text-align: center;
 	    padding-top: 0;
 	}
 	#section-recentworks1 .our-portfolio .item a {
-	    margin-bottom: 15px;
+	    margin-bottom: 0px;
 	}
 	.title1 {
 	    margin-bottom: 40px;

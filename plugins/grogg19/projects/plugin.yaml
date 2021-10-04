@@ -1,0 +1,6 @@
+plugin:
+    name: 'grogg19.projects::lang.plugin.name'
+    description: 'grogg19.projects::lang.plugin.description'
+    author: Grogg19
+    icon: oc-icon-apple
+    homepage: ''
