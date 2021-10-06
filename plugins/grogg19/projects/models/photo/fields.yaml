@@ -1,0 +1,20 @@
+fields:
+    title:
+        label: Title
+        span: left
+        placeholder: Название
+        type: text
+    image:
+        label: Image
+        type: fileupload
+        mode: image
+        imageWidth: 320
+        imageHeight: 240
+        span: auto
+    project:
+        label: Project
+        nameFrom: name
+        descriptionFrom: description
+        emptyOption: empty
+        span: left
+        type: relation

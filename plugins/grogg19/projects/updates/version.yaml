@@ -1,5 +1,6 @@
 1.0.1:
     - Initialize plugin.
 1.0.2:
-    - Update with migrations to create projects table
+    - Update with migrations to create projects and project_photos tables
     - create_projects_table.php
+    - create_project_photos_table.php

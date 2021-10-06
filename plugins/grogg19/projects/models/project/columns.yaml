@@ -1,8 +1,10 @@
-# ===================================
-#  List Column Definitions
-# ===================================
-
 columns:
+    name:
+        label: 'Название проекта'
+        type: text
     id:
-        label: ID
-        searchable: true
+        label: id
+        type: number
+    description:
+        label: description
+        type: text

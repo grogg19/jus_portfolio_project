@@ -1,0 +1,11 @@
+name: PhotoController
+modelClass: Grogg19\Projects\Models\Photo
+form: $/grogg19/projects/models/photo/fields.yaml
+defaultRedirect: grogg19/projects/photocontroller
+create:
+    redirect: 'grogg19/projects/photocontroller/update/:id'
+    redirectClose: grogg19/projects/photocontroller
+update:
+    redirect: grogg19/projects/photocontroller
+    redirectClose: grogg19/projects/photocontroller
+preview: {  }

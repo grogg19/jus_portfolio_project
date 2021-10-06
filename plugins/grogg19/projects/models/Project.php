@@ -1,72 +1,38 @@
-<?php namespace \Grogg19/Projects\Models;
+<?php namespace Grogg19\Projects\Models;
 
 use Model;
 
 /**
- * Project Model
+ * Model
  */
 class Project extends Model
 {
     use \October\Rain\Database\Traits\Validation;
+    
 
     /**
      * @var string The database table used by the model.
      */
-    public $table = '';
+    public $table = 'grogg_projects';
 
     /**
-     * @var array Guarded fields
+     * @var array Validation rules
      */
-    protected $guarded = ['*'];
-
-    /**
-     * @var array Fillable fields
-     */
-    protected $fillable = [];
-
-    /**
-     * @var array Validation rules for attributes
-     */
-    public $rules = [];
-
-    /**
-     * @var array Attributes to be cast to native types
-     */
-    protected $casts = [];
-
-    /**
-     * @var array Attributes to be cast to JSON
-     */
-    protected $jsonable = [];
-
-    /**
-     * @var array Attributes to be appended to the API representation of the model (ex. toArray())
-     */
-    protected $appends = [];
-
-    /**
-     * @var array Attributes to be removed from the API representation of the model (ex. toArray())
-     */
-    protected $hidden = [];
-
-    /**
-     * @var array Attributes to be cast to Argon (Carbon) instances
-     */
-    protected $dates = [
-        'created_at',
-        'updated_at'
+    public $rules = [
+        'name' => 'required',
+        'slug' => ['required', 'regex:/^[a-z0-9\/\:_\-\*\[\]\+\?\|]*$/i', 'unique:grogg_projects'],
     ];
 
     /**
      * @var array Relations
      */
-    public $hasOne = [];
-    public $hasMany = [];
-    public $belongsTo = [];
-    public $belongsToMany = [];
-    public $morphTo = [];
-    public $morphOne = [];
-    public $morphMany = [];
-    public $attachOne = [];
-    public $attachMany = [];
+    public $hasMany = [
+        'photos' => [
+            Photo::class,
+            'order' => 'sort_order desc',
+        ]
+    ];
+    public $belongsTo = [
+        'front' => [Photo::class],
+    ];
 }

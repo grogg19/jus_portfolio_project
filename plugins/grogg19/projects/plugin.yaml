@@ -4,3 +4,17 @@ plugin:
     author: Grogg19
     icon: oc-icon-apple
     homepage: ''
+navigation:
+    main-menu-projects:
+        label: Проекты
+        url: grogg19/projects/projectscontroller
+        icon: icon-briefcase
+        sideMenu:
+            side-menu-add-project:
+                label: 'Новый проект'
+                url: grogg19/projects/projectscontroller/create
+                icon: icon-plus-circle
+            side-menu-photos:
+                label: Фотографии
+                url: grogg19/projects/photocontroller
+                icon: icon-camera

@@ -1,8 +1,18 @@
-# ===================================
-#  Form Field Definitions
-# ===================================
-
 fields:
-    id:
-        label: ID
-        disabled: true
+    name:
+        label: 'Название проекта'
+        span: left
+        type: text
+
+    slug:
+        label: Slug
+        span: right
+        placeholder: -slug-
+        preset:
+            field: name
+            type: slug
+
+    description:
+        label: 'Описание проекта'
+        type: richeditor
+        size: large

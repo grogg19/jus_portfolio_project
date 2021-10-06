@@ -1,0 +1,4 @@
+title: ProjectsController
+modelClass: Grogg19\Projects\Models\Project
+toolbar:
+    buttons: reorder_toolbar

@@ -9,15 +9,18 @@ class CreateProjectsTable extends Migration
 {
     public function up()
     {
-        Schema::create('grogg19_projects', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('grogg_projects', function (Blueprint $table) {
+            $table->unsignedInteger('id', true);
+            $table->string('name');
+            $table->string('slug');
+            $table->text('description');
+            $table->unsignedInteger('front_id')->nullable();
             $table->timestamps();
-            $table->softDeletes();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('grogg19_projects');
+        Schema::dropIfExists('grogg_projects');
     }
 }

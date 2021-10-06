@@ -1,0 +1,10 @@
+name: ProjectsController
+form: $/grogg19/projects/models/project/fields.yaml
+modelClass: Grogg19\Projects\Models\Project
+defaultRedirect: grogg19/projects/projectscontroller
+create:
+    redirect: 'grogg19/projects/projectscontroller/update/:id'
+    redirectClose: grogg19/projects/projectscontroller
+update:
+    redirect: grogg19/projects/projectscontroller
+    redirectClose: grogg19/projects/projectscontroller

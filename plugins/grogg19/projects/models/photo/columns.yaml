@@ -1,0 +1,13 @@
+columns:
+    id:
+        label: ID
+        type: number
+        searchable: true
+    title:
+        label: Title
+        type: text
+
+    project:
+        label: Проект
+        valueFrom: name
+        relation: project
