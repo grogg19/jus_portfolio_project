@@ -10,11 +10,11 @@ navigation:
         url: grogg19/projects/projectscontroller
         icon: icon-briefcase
         sideMenu:
+            side-menu-list-projects:
+                label: 'Каталог проектов'
+                url: grogg19/projects/projectscontroller/
+                icon: icon-list
             side-menu-add-project:
-                label: 'Новый проект'
+                label: 'Создать проект'
                 url: grogg19/projects/projectscontroller/create
                 icon: icon-plus-circle
-            side-menu-photos:
-                label: Фотографии
-                url: grogg19/projects/photocontroller
-                icon: icon-camera

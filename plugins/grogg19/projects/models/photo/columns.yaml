@@ -1,8 +1,9 @@
 columns:
     id:
-        label: ID
-        type: number
-        searchable: true
+        label: photo
+        type: image
+        width: 100
+        height: 100
     title:
         label: Title
         type: text

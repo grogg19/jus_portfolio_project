@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+photos:
+    label: 'изображение'
+    manage:
+        form: $/grogg19/projects/models/photo/fields.yaml
+        list: $/grogg19/projects/models/photo/columns.yaml
+    view:
+        list: $/grogg19/projects/models/photo/columns.yaml
+        toolbarPartial: relation_toolbar
