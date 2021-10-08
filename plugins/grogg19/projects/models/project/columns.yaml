@@ -2,9 +2,7 @@ columns:
     name:
         label: grogg19.projects::lang.plugin.title_label
         type: text
+
     id:
         label: id
         type: number
-    description:
-        label: grogg19.projects::lang.plugin.description_label
-        type: text

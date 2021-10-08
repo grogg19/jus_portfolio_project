@@ -1,6 +1,6 @@
 fields:
     name:
-        label: 'Название проекта'
+        label: grogg19.projects::lang.plugin.title_label
         span: left
         type: text
 
@@ -13,6 +13,6 @@ fields:
             type: slug
 
     description:
-        label: 'Описание проекта'
+        label: grogg19.projects::lang.plugin.description_label
         type: richeditor
         size: large

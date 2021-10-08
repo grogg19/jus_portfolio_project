@@ -1,4 +1,4 @@
-title: ProjectsController
+title: 'grogg19.projects::lang.plugin.description'
 modelClass: Grogg19\Projects\Models\Project
 list: $/grogg19/projects/models/project/columns.yaml
 recordUrl: 'grogg19/projects/projectscontroller/update/:id'

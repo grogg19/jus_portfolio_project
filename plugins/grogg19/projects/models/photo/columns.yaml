@@ -8,6 +8,12 @@ columns:
         label: Title
         type: text
 
+    front:
+        label: grogg19.projects::lang.plugin.front_label
+        relation: project
+        select: front_id
+        type: is_front
+
     project:
         label: Проект
         valueFrom: name

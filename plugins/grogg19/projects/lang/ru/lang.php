@@ -7,7 +7,8 @@
         'set_front_button' => 'Сделать главным изображением',
         'reorder_button' => 'Упорядочить',
         'title_label' => 'Название проекта',
-        'description_label' => 'Описание проекта'
+        'description_label' => 'Описание проекта',
+        'front_label' => 'Главное изображение',
     ],
     'messages' => [
         'set_front' => 'Сделать главным изображением проекта?'
@@ -16,5 +17,10 @@
         'create_name' => 'Завести новое изображение',
         'delete' => 'Удалить',
         'delete_confirm' => 'Удалить изображение?'
+    ],
+    'errors' => [
+        'project_not_found' => 'Проект не найден',
+        'cant_find_selected' => 'Выбранное фото не найдено',
+        'not_this_project' => 'Не в этом проекте'
     ]
 ];

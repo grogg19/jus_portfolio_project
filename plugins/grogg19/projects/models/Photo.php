@@ -19,7 +19,7 @@ class Photo extends Model
      * @var array of validation rules
      */
     public $rules = [
-        'title' => 'required',
+        //'title' => 'required',
     ];
 
     /**
