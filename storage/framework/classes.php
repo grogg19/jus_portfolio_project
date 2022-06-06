@@ -307,4 +307,7 @@
   'Grogg19\\Projects\\Models\\Photo' => 'plugins/grogg19/projects/models/Photo.php',
   'system\\Controllers\\settings' => 'modules/system/controllers/settings.php',
   'rainlab\\translate\\Controllers\\locales' => 'plugins/rainlab/translate/controllers/locales.php',
+  'Grogg19\\Projects\\Components\\ProjectsList' => 'plugins/grogg19/projects/components/ProjectsList.php',
+  'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
+  'system\\Controllers\\requestlogs' => 'modules/system/controllers/requestlogs.php',
 );

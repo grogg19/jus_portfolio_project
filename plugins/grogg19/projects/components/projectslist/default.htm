@@ -1,0 +1,21 @@
+<div class="row">
+	{% for project in __SELF__.projects %}
+	<div class="item col-12 col-md-4">
+		<a href="{{ project.url }}">
+			<div class="img-container">
+
+				<img class="img-fluid" src="{{ project.front.thumb }}" alt="{{ project.name }}">
+				<div class="overlay">
+					<!--div class="overlay-content">
+					<i></i>
+					<h3>The big drop in slow motion</h3>
+					<p>Photography</p>
+					</div-->
+				</div>
+			</div>
+		</a>
+	</div>
+	{% endfor %}
+</div>
+
+<!--<div class="col-xs-12 no-data">You have not created any albums yet</div>-->
