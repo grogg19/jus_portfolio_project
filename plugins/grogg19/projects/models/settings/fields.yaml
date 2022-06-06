@@ -1,0 +1,10 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    code:
+      label: grogg19.projects::lang.plugin.code_label
+      comment: grogg19.projects::lang.plugin.code_description
+      default: '![%title%]([photo:%id%])'
