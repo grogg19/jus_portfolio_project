@@ -1,9 +1,5 @@
 <?php namespace Grogg19\Projects\Controllers;
 
-use Backend\Behaviors\FormController;
-use Backend\Behaviors\ListController;
-use Backend\Behaviors\RelationController;
-use Backend\Behaviors\ReorderController;
 use Backend\Classes\Controller;
 use BackendMenu;
 use Grogg19\Projects\Models\Photo;
@@ -21,15 +17,15 @@ class ProjectsController extends Controller
         'Backend\Behaviors\RelationController',
     ];
     
-    public $listConfig = 'config_list.yaml';
-    public $formConfig = 'config_form.yaml';
-    public $reorderConfig = 'config_reorder.yaml';
-    public $relationConfig = 'config_relation.yaml';
+    public string $listConfig = 'config_list.yaml';
+    public string $formConfig = 'config_form.yaml';
+    public string $reorderConfig = 'config_reorder.yaml';
+    public string $relationConfig = 'config_relation.yaml';
 
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Grogg19.Projects', 'main-menu-projects');
+        BackendMenu::setContext('Grogg19.Projects', 'main-menu-projects', 'side-menu-list-projects');
     }
 
     /**
