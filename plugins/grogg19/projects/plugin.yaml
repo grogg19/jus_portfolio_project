@@ -7,12 +7,12 @@ plugin:
 navigation:
     main-menu-projects:
         label: Проекты
-        url: grogg19/projects/projectscontroller
+        url: grogg19/projects/projectscontroller/
         icon: icon-briefcase
         sideMenu:
             side-menu-list-projects:
                 label: 'Каталог проектов'
-                url: grogg19/projects/projectscontroller/
+                url: grogg19/projects/projectscontroller/list
                 icon: icon-list
             side-menu-add-project:
                 label: 'Создать проект'
