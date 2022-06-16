@@ -12,7 +12,7 @@ navigation:
         sideMenu:
             side-menu-list-projects:
                 label: 'Каталог проектов'
-                url: grogg19/projects/projectscontroller/list
+                url: grogg19/projects/projectscontroller/
                 icon: icon-list
             side-menu-add-project:
                 label: 'Создать проект'
