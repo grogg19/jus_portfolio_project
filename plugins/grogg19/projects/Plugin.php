@@ -95,4 +95,20 @@ class Plugin extends PluginBase
             }
         });
     }
+
+    /**
+     * Returns information about this plugin.
+     *
+     * @return array
+     */
+    public function pluginDetails()
+    {
+        return [
+            'name'        => 'grogg19.projects::lang.plugin.name',
+            'description' => 'grogg19.projects::lang.plugin.description',
+            'author'      => 'Grogg19',
+            'icon'        => 'oc-icon-apple',
+            'homepage'    => 'https://github.com/grogg19',
+        ];
+    }
 }
