@@ -15,10 +15,10 @@ use League\Flysystem\Exception;
 class ProjectsController extends Controller
 {
     public $implement = [
-        ListController::class,
-        FormController::class,
-        ReorderController::class,
-        RelationController::class
+        'Backend\Behaviors\ListController',
+        'Backend\Behaviors\FormController',
+        'Backend\Behaviors\ReorderController',
+        'Backend\Behaviors\RelationController',
     ];
     
     public $listConfig = 'config_list.yaml';
