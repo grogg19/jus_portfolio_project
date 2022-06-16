@@ -6,3 +6,6 @@
 1.0.3:
     - 'Update with migration to create grogg_project_photos table'
     - create_projects_photos_table.php
+1.0.4:
+    - 'Add sort field to projects table'
+    - add_sort_field_to_projects_table.php
