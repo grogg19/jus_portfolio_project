@@ -310,4 +310,5 @@
   'Grogg19\\Projects\\Components\\ProjectsList' => 'plugins/grogg19/projects/components/ProjectsList.php',
   'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
   'system\\Controllers\\requestlogs' => 'modules/system/controllers/requestlogs.php',
+  'RainLab\\Builder\\Classes\\MigrationFileParser' => 'plugins/rainlab/builder/classes/MigrationFileParser.php',
 );

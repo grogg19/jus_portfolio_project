@@ -1,6 +1,8 @@
 1.0.1:
-    - Initialize plugin.
+    - 'Initialize plugin.'
 1.0.2:
-    - Update with migrations to create projects and project_photos tables
+    - 'Update with migration to create grogg_projects table'
     - create_projects_table.php
-    - create_project_photos_table.php
+1.0.3:
+    - 'Update with migration to create grogg_project_photos table'
+    - create_projects_photos_table.php
