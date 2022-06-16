@@ -64,10 +64,20 @@ class Plugin extends PluginBase
         return [
             'projectslist' => [
                 'label' => 'grogg19.projects::lang.plugin.tab',
-                'url' => Backend::url('grogg19/projects/list'),
+                'url' => Backend::url('grogg19/projects/projectscontroller'),
                 'icon'        => 'icon-camera-retro',
-                'permissions' => ['grogg19.projects.manage_albums'],
+                'permissions' => ['grogg19.projects.manage_projects'],
                 'order'       => 500,
+
+                'sideMenu' => [
+                    'upload_photos' => [
+                        'label'       => 'graker.photoalbums::lang.plugin.upload_photos',
+                        'icon'        => 'icon-upload',
+                        'url'         => Backend::url('grogg19/projects/upload/form'),
+                        'permissions' => ['grogg19.projects.manage_projects'],
+                    ],
+
+                ],
             ],
         ];
     }
