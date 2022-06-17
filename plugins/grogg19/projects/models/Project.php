@@ -1,6 +1,8 @@
 <?php namespace Grogg19\Projects\Models;
 
 use Model;
+use October\Rain\Database\Traits\Sortable;
+use October\Rain\Database\Traits\Validation;
 use System\Models\File;
 
 /**
@@ -8,7 +10,8 @@ use System\Models\File;
  */
 class Project extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
+    use Validation;
+    use Sortable;
     
 
     /**
