@@ -71,7 +71,7 @@ class Plugin extends PluginBase
 
                 'sideMenu' => [
                     'upload_photos' => [
-                        'label'       => 'graker.photoalbums::lang.plugin.upload_photos',
+                        'label'       => 'grogg19.projects::lang.plugin.upload_photos',
                         'icon'        => 'icon-upload',
                         'url'         => Backend::url('grogg19/projects/upload/form'),
                         'permissions' => ['grogg19.projects.manage_projects'],
