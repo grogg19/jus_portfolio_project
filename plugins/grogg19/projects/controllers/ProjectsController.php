@@ -25,7 +25,10 @@ class ProjectsController extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Grogg19.Projects', 'main-menu-projects', 'side-menu-list-projects');
+
+        if ($this->action === 'update') {
+            BackendMenu::setContext('Grogg19.Projects', 'projectslist', 'side-menu-list-projects');
+        }
     }
 
     /**
