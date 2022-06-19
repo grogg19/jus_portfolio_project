@@ -17,3 +17,8 @@ fields:
         emptyOption: empty
         span: left
         type: relation
+    description:
+        label: grogg19.projects::lang.plugin.photo_description
+        type: richeditor
+        span: left
+        size: small
