@@ -10,7 +10,10 @@ class AddSortFieldToProjectsTable extends Migration
     {
          Schema::table('grogg_projects', static function (Blueprint $table)
          {
-             $table->integer('sort_order', false, true);
+             $table
+                 ->integer('sort_order', false, true)
+                 ->default(0)
+             ;
          });
     }
 
