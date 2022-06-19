@@ -1,20 +1,19 @@
 fields:
     title:
-        label: Title
+        label: grogg19.projects::lang.plugin.photo_title
         span: left
         placeholder: Название
         type: text
     image:
-        label: Image
+        label: grogg19.projects::lang.plugin.photo_label
         type: fileupload
         mode: image
         imageWidth: 320
         imageHeight: 240
         span: auto
     project:
-        label: Project
+        label: grogg19.projects::lang.plugin.title_label
         nameFrom: name
-        descriptionFrom: description
         emptyOption: empty
         span: left
         type: relation
