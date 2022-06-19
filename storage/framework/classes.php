@@ -311,4 +311,5 @@
   'backend\\Controllers\\auth' => 'modules/backend/controllers/auth.php',
   'system\\Controllers\\requestlogs' => 'modules/system/controllers/requestlogs.php',
   'RainLab\\Builder\\Classes\\MigrationFileParser' => 'plugins/rainlab/builder/classes/MigrationFileParser.php',
+  'backend\\Controllers\\media' => 'modules/backend/controllers/media.php',
 );
