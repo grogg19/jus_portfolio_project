@@ -72,7 +72,7 @@ class ProjectsController extends Controller
             if (!$photo) {
                 throw new ApplicationException(Lang::get('grogg19.projects::lang.errors.cant_find_selected'));
             }
-            if ($photo->project_id != $project->id) {
+            if ($photo->project_id !== $project->id) {
                 // attempt to use other project's photo
                 throw new ApplicationException(Lang::get('grogg19.projects::lang.errors.not_this_project'));
             }
