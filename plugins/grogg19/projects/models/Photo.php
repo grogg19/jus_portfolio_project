@@ -1,6 +1,7 @@
 <?php namespace Grogg19\Projects\Models;
 
 use Model;
+use October\Rain\Database\Traits\Validation;
 use System\Models\File;
 
 /**
@@ -8,7 +9,7 @@ use System\Models\File;
  */
 class Photo extends Model
 {
-    use \October\Rain\Database\Traits\Validation;
+    use Validation;
 
     /**
      * @var string The database table used by the model.
