@@ -33,5 +33,7 @@
     'components' => [
         'projects_list' => 'Список проектов',
         'projects_list_description' => 'Каталог выполненных проектов',
+        'project_page_label' => 'Страница проекта',
+        'project_page_description' => 'Страница проекта, где показываются элементы проекта',
     ],
 ];
