@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'JUSIKD.ART',
+    'name' => env('APP_NAME', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,8 +41,7 @@ return [
     |
     */
 
-//    'url' => 'http://jusikd.art/',
-    'url' => 'http://localhost/',
+    'url' => env('APP_URL', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -102,7 +101,7 @@ return [
     |
     */
 
-    'key' => 'SrBJwB6j0LBxJVWdioShS12MZ2RLQC2w',
+    'key' => env('ENCRYPTION_KEY', false),
 
     'cipher' => 'AES-256-CBC',
 
