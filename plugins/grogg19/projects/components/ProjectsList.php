@@ -152,7 +152,7 @@ class ProjectsList extends ComponentBase
      * @return array
      */
     protected function loadProjects() {
-        $projects = Project::orderBy('created_at', 'desc')
+        $projects = Project::orderBy('sort_order', 'asc')
             ->has('photos')
             ->with(['latestPhoto' => function ($query) {
                 $query->with('image');
